@@ -8,7 +8,7 @@ public class Earthquake {
 
     private String mMagnitude;
     private String mPlace;
-    private String mDate;
+    private long mTimeInMilliseconds;
 
     public void setmMagnitude(String mMagnitude) {
         this.mMagnitude = mMagnitude;
@@ -18,8 +18,8 @@ public class Earthquake {
         this.mPlace = mPlace;
     }
 
-    public void setmDate(String mDate) {
-        this.mDate = mDate;
+    public void setTimeInMilliseconds(long mDate) {
+        this.mTimeInMilliseconds = mDate;
     }
 
 
@@ -31,13 +31,13 @@ public class Earthquake {
         return mPlace;
     }
 
-    public String getmDate() {
-        return mDate;
+    public long getTimeInMilliseconds() {
+        return mTimeInMilliseconds;
     }
 
-    public Earthquake(String mMagnitude, String mPlace, String mDate) {
+    public Earthquake(String mMagnitude, String mPlace, long mTimeInMilliseconds) {
         this.mMagnitude = mMagnitude;
         this.mPlace = mPlace;
-        this.mDate = mDate;
+        this.mTimeInMilliseconds = mTimeInMilliseconds;
     }
 }
