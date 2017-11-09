@@ -71,7 +71,7 @@ public class QueryUtils {
                 SimpleDateFormat dateFormatter=new SimpleDateFormat("MMM DD, yyyy");
                 String dateToDisplay = dateFormatter.format(dateObject);*/
                 double magnitude = properties.getDouble("mag");
-                Earthquake e =new Earthquake(magnitude,properties.getString("place"),properties.getLong("time"));
+                Earthquake e =new Earthquake(magnitude,properties.getString("place"),properties.getLong("time"),properties.getString("url"));
                 earthquakes.add(e);
 
             }
